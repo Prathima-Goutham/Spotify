@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Mixed Messages</title>
+      
+    
+    <script>
+        function showMessage() {
+            document.getElementById('jokes-text').innerHTML =randomTeaser();
+        }
+        function randomTeaser()
+        {
+           let i=Math.floor(Math.random() * 21);
+           let arrayofteasers=["I follow you all the time and copy your every move, but you can’t touch me. What am I?",
+            "A taxi driver is going down a one-way street the wrong way, and passes at least 10 cops. Why is she not caught?",
+            "I turn once, so what is out will not get in.",
+            "What has four legs, but can’t walk?",
+            "What gets wetter as it dries?",
+            "What has to be broken before you can use it?",
+            "I have wings, I am able to fly, I’m not a bird yet I soar high in the sky. What am I?",
+            "How can Sarah go 8 days without sleep? ",
+            "Give me air and I will live. Give me water and I will die. What am I?",
+            "What occurs once in a minute, twice in a moment, but never in one thousand years?",
+            "No matter how little or how much you use me, you change me every month. What am I?",
+            "What word contains 26 letters, but only three syllables?",
+            "What goes up and down, but never moves?",
+            "Turn me on my side and I am everything. Cut me in half and I am nothing. What am I?",
+            "What can be stolen, but never leave you?",
+            "What word has six letters, but if you remove one letter, you’ll be left with 12?",
+            "What is always in front of you but invisible?",
+            "What is as light as a feather, but even the world’s strongest woman couldn’t hold it for more than a minute?",
+            "The more there is the less you see. What is it? ",
+            "You can find it in Mercury, Earth, Mars, Jupiter and Saturn, but not in Venus or Neptune. What is it?",//20
+        ];
+        return(arrayofteasers[i]);
+        }
+    </script>
+</head>
+
+
+<body>
+    <main>
+      <div class="joke-container">
+        <header>
+          <h1>Are you ready for brain teasers?!!</h1>
+          <div class="divider"></div>
+        </header>
+        
+        <div class="joke-area">
+            <h2 id="jokes-text"></h2>
+        </div>
+  
+        <div class="button">
+          <button class="btn-generate" onclick="showMessage()">More?</button>
+        </div>
+      </div>
+    </main>
+  
+    
+  
+  </body>
+  </html>
